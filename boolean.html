@@ -1,0 +1,21 @@
+<html>
+    <body>
+      <h1>BOOLEAN</h1>  
+      <h2>USE CASE : If...else</h2>
+
+      <p id = "1"></p>
+
+    <script>
+        const hour = new Date().getHours();
+        let greetings;
+
+        if (hour < 15){
+            greetings = "GOOD DAY!!!";
+        }
+        else {
+            greetings = "GOOD EVENING :)";
+        }
+        document.getElementById("1").innerHTML = greetings;
+    </script>
+    </body>
+</html>

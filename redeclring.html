@@ -1,0 +1,35 @@
+<!--
+<html>
+    <body>
+        <h2>Redeclaring a Variable Using var</h2>
+        <p id = "1"></p>
+
+        <script>
+            var x = 10;  //Here x is 10
+
+        {
+            var x = 3;  //Here x is 2
+        }
+
+        document.getElementById("1").innerHTML = x;
+        </script>
+    </body>
+</html>
+-->
+<html>
+    <body>
+        <h2>Redeclaring a Variable using let</h2>
+
+        <p id = "1"></p>
+
+        <script>
+            let x = 10;  //Here the value of x is 10
+
+            {
+                let x = 5; //Here the value of x is 5
+            }
+
+            document.getElementById("1").innerHTML = x;
+        </script>
+    </body>
+</html>

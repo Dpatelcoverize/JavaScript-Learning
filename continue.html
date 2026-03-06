@@ -1,0 +1,17 @@
+<html>
+   <body>
+    <h1>THE CONTINUE LOOPS</h1>
+
+    <p id = "1"></p>
+
+    <script>
+        let text = "";
+
+        for (let i = 1; i < 10; i ++) {
+            if (i === 3) { continue; }
+            text += i * 10 + "<br>";
+        }
+        document.getElementById('1').innerHTML = text;
+    </script>
+   </body> 
+</html>

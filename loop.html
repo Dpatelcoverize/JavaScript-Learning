@@ -1,0 +1,29 @@
+<!--The For Loop-->
+<!--
+for (expr1; expr2; expr) {
+  // code block to be executed
+}
+-->
+<html>
+    <body>
+        <h1>FOR LOOP</h1>
+
+        <p id = "1"></p>
+
+        <script>
+            let text = ""; //"" empty string 
+            /* Step-by-step
+            Loop	  Text Value
+            Start	      ""
+     	    i = 1         "1"
+	        i = 2         "1 2"
+	        i = 3         "1 2 3"
+            */
+
+            for (let i = 1; i < 11; i++){
+                text += "The  number is " + i + "<br>"
+            }
+            document.getElementById("1").innerHTML = text;
+        </script>
+    </body>
+</html>
