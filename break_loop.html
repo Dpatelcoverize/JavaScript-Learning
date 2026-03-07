@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Break Statement in a Loop</h1>
+
+        <p id = "1"></p>
+
+        <script>
+            let text = "";
+
+            for (let i = 0; i < 10; i++){
+                if (i == 3){ break; } //breaks the loop when 3 comes
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("1").innerHTML = text;
+        </script>
+    </body>
+</html>

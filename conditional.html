@@ -1,0 +1,49 @@
+<!--
+    if else
+    else if
+    switch
+    ternary
+-->
+<html>
+    <body>
+
+        <p id = "1"></p>
+
+        <script>
+            //If
+            /*let age = 20;
+
+            if (age >+ 18){
+                document.getElementById("1").innerHTML = "You are an adult";
+            } */
+           /*let age = 15;
+
+           if (age >= 18){
+            document.getElementById("1").innerHTML = "You can vote";
+           }
+           else {
+            document.getElementById("1").innerHTML = "You cannot vote";
+           }*/
+           
+           /*let marks = prompt ("Enter your marks: ");
+            if (marks >= 90){
+                document.getElementById("1").innerHTML = "Grade A";
+            }
+            else if (marks >= 60){
+                document.getElementById("1").innerHTML = "Grade B";
+            }
+            else if (marks >= 50){
+                document.getElementById("1").innerHTML = "Grade C";
+            }
+            else {
+                document.getElementById("1").innerHTML = "Good try!!";
+            } */
+           //Ternary Operator
+           let age = prompt ("Enter your age: ");
+           let text = (age < 18) ? "Minor" : "Adult";
+
+           document.getElementById("1").innerHTML = text;
+            
+        </script>
+    </body>
+</html>
