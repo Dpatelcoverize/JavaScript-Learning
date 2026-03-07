@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Simple Calculator</title>
+
+        <style>
+            body{
+                font-family: Segoe UI Light;
+                /*background-color: #121212;*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(135deg, #667eea,#764ba2);
+            }
+
+            .calculator{
+                backdrop-filter: blur(15px);
+                background: rgba(255,255,255,0.1);
+                border: 1px solid rgba(255,255,255,0.2);
+                /*background-color: #1e1e1e;*/
+                width: 300px;
+                padding: 30px;
+                border-radius: 15px;
+                /*box-shadow: 0px 0px 15px black;*/
+                text-align: center;
+            }
+
+            h1{
+                color: white;
+            }
+            
+            input{
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 8px;
+                /*background-color: #2a2a2a;*/
+                background: rgba(255,255,255,0.2);
+                color: white;
+                font-size: 16px
+            }
+
+            input::placeholder{
+                color: #ddd;
+            }
+
+            button{
+                padding: 10px 15px;
+                margin: 5px;
+                font-size: 16px;
+                border: none;
+                /*background-color: #ff9800;*/
+                background: rgba(255,255,255,0.2);
+                color: white;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            button:hover{
+                /*background-color: #e68900;*/
+                background: rgba(255,255,255,0.4);
+            }
+
+            #result{
+                color: #fff;
+                font-size: 18px;
+                margin-top: 15px;
+                /*font-weight: bold;*/
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="calculator">
+        <h1>SIMPLE CALCULATOR</h1>
+
+        Enter First Number : 
+        <input type = "text" id = "num1"> <br><br>
+
+        Enter Second Number : 
+        <input type = "text" id = "num2"> <br><br>
+
+        <button onclick = "add()">ADD</button>
+        <button onclick = "substract()">SUBTRACT</button>
+        <button onclick = "multiply()">MULTIPLICATION</button>
+        <button onclick="divide()">DIVIDE</button>
+
+        <p id = "result"></p>
+        </div>
+
+        <script>
+             function add(){
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                document.getElementById("result").innerHTML = "Answer = " + (a + b);
+             }
+             function substract(){
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                document.getElementById("result").innerHTML = "Answer = " + (a - b);
+             }
+             function multiply(){
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                document.getElementById("result").innerHTML = "Answer = " + (a * b);
+             }
+             function divide(){
+                let a = Number(document.getElementById("num1").value);
+                let b = Number(document.getElementById("num2").value);
+
+                document.getElementById("result").innerHTML = "Answer = " + (a / b);
+            }
+
+             
+        </script>
+    </body>
+</html>

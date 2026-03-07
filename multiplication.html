@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>MULTIPLICATION TABLE</h1>
+         ENTER A NUMBER : <input type = "number" id = "num">
+
+         <button onclick = "table()">SHOW TABLE</button>
+
+         <p id = "1"></p>
+
+         <script>
+            function table(){
+                let n = document.getElementById("num").value;
+                let text = "";
+
+                for (let i = 1 ; i <= 10; i ++){
+                    text += n + " * " + i + " = " + (n * i) + "<br>";
+                }
+
+                document.getElementById("1").innerHTML = text;
+            }
+         </script>
+    </body>
+</html>

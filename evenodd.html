@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>EVEN OR ODD NUMBERS</h1>
+
+        Enter a number : <input type = "number" id = "num">
+        <button onclick = "checkNumber()">CHECK</button>
+
+        <p id = "1"></p>
+
+        <script>
+            function checkNumber(){
+                let n = document.getElementById("num").value;
+
+                if (n % 2 == 0){
+                    document.getElementById("1").innerHTML = "Even Number";
+                } else {
+                    document.getElementById("1").innerHTML = "Odd Number";
+                }
+            }
+        </script>
+
+    </body>
+</html>
