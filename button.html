@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Button Click Counter</h1>
+        <p id = "demo"></p>
+
+        <button onclick = "increase()">Click Me</button>
+        <p id = "result">0</p>
+
+        <script>
+            let count = 0;
+
+            function increase(){
+                count ++;
+                document.getElementById("result").innerText = count;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>Show/Hide Password</h1>
+        <p id = "demo"></p>
+
+        <input type = "password" id = "password">
+        <button onclick = "togglePassword()">Show/Hide</button>
+
+        <script>
+            function togglePassword(){
+                let pass = document.getElementById("password");
+
+                if(pass.type === "password"){
+                    pass.type = "text";
+                } else{
+                    pass.type = "password";
+                }
+            }
+        </script>
+    </body>
+</html>

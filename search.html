@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h1>Simple Search Filter</h1>
+        <p id = "demo"></p>
+
+        <input type = "text" id = "search" onkeyup = "searchItem()">
+
+        <ul id = "list">
+            <li>Data Management and Visual Insight</li>
+            <li>Software Development</li>
+            <li>Gaming and Animation</li>
+            <li>Cyber Security</li>
+            <li>Data Analytics</li>
+        </ul>
+        <script>
+            function searchItem(){
+                let input = document.getElementById("search").value.toLowerCase();
+                let list = document.getElementById("list");
+                let items = list.getElementsByTagName("li");
+
+                for(let i = 0; i < items.length; i++){
+                    let text = items[i].innerText.toLowerCase();
+
+                    if(text.includes(input)){
+                        items[i].style.display = "";
+                    }else{
+                        items[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
