@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(135deg,#141e30,#243b55);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial;
+}
+
+.container{
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+    width:300px;
+}
+
+input{
+    padding:10px;
+    width:70%;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+ul{
+    padding:0;
+}
+
+li{
+    list-style:none;
+    background:rgba(255,255,255,0.2);
+    margin:10px 0;
+    padding:10px;
+    border-radius:8px;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
